@@ -56,7 +56,11 @@ main {
     display: block;
 }
 
-/* Oculta o checkbox do truque do menu */
+/* ==========================================
+   MENU SANDUÍCHE (CHECKBOX HACK)
+   ========================================== */
+/* Oculta o checkbox padrão na tela, mas utiliza seu estado :checked para alterar o display da .nav-menu de 'none' para 'block' */
+
 .menu-toggle {
     display: none;
 }
@@ -167,7 +171,8 @@ main {
     margin-bottom: 40px;
 }
 
-.artigo-conteudo h1 {
+/* Estilo atualizado do título principal (antigo H1) */
+.artigo-conteudo .titulo-principal {
     color: #2c3e50;
     font-size: 2.2rem;
     margin-bottom: 20px;
@@ -175,14 +180,15 @@ main {
     padding-bottom: 10px;
 }
 
-.artigo-conteudo h2 {
+/* Estilos atualizados dos subtítulos para respeitar a semântica W3C */
+.artigo-conteudo h3 {
     color: #34495e;
     font-size: 1.6rem;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.artigo-conteudo h3 {
+.artigo-conteudo h4 {
     color: #27ae60;
     font-size: 1.2rem;
     margin-top: 20px;
@@ -202,7 +208,10 @@ main {
     color: #2c3e50;
 }
 
-/* Estilo das Figuras e Imagens Responsivas */
+/* ==========================================
+   COMPORTAMENTO DE IMAGENS
+   ========================================== */
+/* O max-width: 100% impede que a imagem vaze o container pai em telas de celulares */
 .figura-destaque {
     margin: 30px 0;
     text-align: center;
@@ -223,9 +232,8 @@ figcaption {
 }
 
 /* ==========================================
-   ESTILOS DA GALERIA EM FLEXBOX E RODAPÉ
+   GALERIA FLEXBOX
    ========================================== */
-
 .secao-galeria {
     padding: 40px 20px;
     background-color: #ffffff;
@@ -247,7 +255,8 @@ figcaption {
     margin-bottom: 30px;
 }
 
-/* O CORAÇÃO DO FLEXBOX NA GALERIA */
+/* O flex-wrap: wrap permite a quebra de linha. 
+   O calc(25% - 20px) força exatamente 4 colunas no desktop, descontando o espaço da margem/gap */
 .galeria-flex {
     display: flex;
     flex-wrap: wrap; /* Permite que os itens pulem para a próxima linha se não couberem */
