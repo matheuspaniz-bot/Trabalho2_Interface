@@ -13,15 +13,15 @@
     <!-- CABEÇALHO: Contém a navegação e o input invisível (checkbox hack) para o menu mobile sem JavaScript -->
     <header class="header-fixo">
         <div class="header-container">
-            <!-- Logótipo -->
+            <!-- Logotipo -->
             <a href="#" class="logo-link">
-                <img src="img/logo.svg" alt="Logótipo Evolução Biológica" class="logo-img">
+                <img src="img/logo.svg" alt="Logotipo Evolução Biológica" class="logo-img">
             </a>
 
-            <!-- Checkbox invisível para controlar o menu no telemóvel (agora com aria-label para acessibilidade) -->
+            <!-- Checkbox invisível para controlar o menu no celular (com aria-label para acessibilidade) -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
 
-            <!-- Ícone do Menu Sanduíche (as 3 linhas - o aria-label foi removido daqui para não dar erro no validador) -->
+            <!-- Ícone do Menu Sanduíche (as 3 linhas) -->
             <label for="menu-toggle" class="menu-icon">
                 <span class="linha"></span>
                 <span class="linha"></span>
@@ -44,17 +44,16 @@
     <main>
         <!-- PRIMEIRA SESSÃO -->
         <section id="introducao" class="secao-educativa">
+            
+            <!-- O H1 visível logo na abertura da section resolve os avisos do W3C de uma vez -->
+            <h1 class="titulo-principal">A Teoria da Evolução das Espécies</h1>
+
             <article class="artigo-conteudo">
-                
-                <!-- Trocamos H1 por H2 para agradar o validador W3C -->
-                <h2 class="titulo-principal">A Teoria da Evolução das Espécies</h2>
-                
                 <p class="introducao-texto">
                     A evolução biológica é o processo pelo qual as populações de organismos se modificam ao longo das gerações. Esse conceito é o pilar fundamental da biologia moderna, explicando como a incrível diversidade de vida na Terra se desenvolveu a partir de um ancestral comum.
                 </p>
 
-                <!-- Antigos H2 viraram H3 por semântica (ordem decrescente) -->
-                <h3>1. Charles Darwin e o Marco da Biologia</h3>
+                <h2>1. Charles Darwin e o Marco da Biologia</h2>
                 <p>
                     Em 1859, o naturalista britânico <strong>Charles Darwin</strong> publicou sua obra-prima, <em>"A Origem das Espécies"</em>. Durante sua famosa viagem a bordo do navio <em>HMS Beagle</em>, Darwin observou a variação entre espécies em diferentes regiões, especialmente nas Ilhas Galápagos.
                 </p>
@@ -65,23 +64,22 @@
                     <figcaption>Figura 1: Charles Darwin (1809–1882), autor da Teoria da Seleção Natural.</figcaption>
                 </figure>
 
-                <h3>2. O Mecanismo da Seleção Natural</h3>
+                <h2>2. O Mecanismo da Seleção Natural</h2>
                 <p>
                     A seleção natural é o principal mecanismo impulsionador da evolução. Ela ocorre em quatro passos fundamentais:
                 </p>
                 
-                <!-- Antigos H3 viraram H4 por semântica -->
-                <h4>A. Variabilidade Individual</h4>
+                <h3>A. Variabilidade Individual</h3>
                 <p>
                     Os indivíduos de uma mesma espécie apresentam pequenas variações em suas características físicas e genéticas.
                 </p>
 
-                <h4>B. Hereditariedade</h4>
+                <h3>B. Hereditariedade</h3>
                 <p>
                     Grande parte dessas variações é transmitida de pais para filhos por meio do código genético.
                 </p>
 
-                <h4>C. Sobrevivência do Mais Apto</h4>
+                <h3>C. Sobrevivência do Mais Apto</h3>
                 <p>
                     Como os recursos no ambiente (alimento, espaço) são limitados, os indivíduos com variações favoráveis possuem maior chance de sobreviver e se reproduzir.
                 </p>
@@ -91,7 +89,7 @@
                     <figcaption>Figura 2: Ilustração do processo de variação e seleção adaptativa ao longo do tempo.</figcaption>
                 </figure>
 
-                <h3>3. Evidências da Evolução</h3>
+                <h2>3. Evidências da Evolução</h2>
                 <p>
                     A teoria não é uma mera suposição; ela é apoiada por uma vasta quantidade de evidências científicas, incluindo registros fósseis que mostram formas intermediárias de vida, semelhanças anatômicas (estruturas homólogas) e comparações do código genético (DNA) entre diferentes organismos.
                 </p>
