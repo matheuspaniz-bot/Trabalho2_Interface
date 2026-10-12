@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+    <!-- Círculo com tom verde biologia -->
+    <circle cx="30" cy="30" r="20" fill="#27ae60" />
+    
+    <!-- Fita de ADN/Evolução no interior do símbolo -->
+    <path d="M20,18 C28,18 28,42 36,42" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M36,18 C28,18 28,42 20,42" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Conexões bases azotadas -->
+    <line x1="22" y1="23" x2="34" y2="23" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="25" y1="30" x2="31" y2="30" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="22" y1="37" x2="34" y2="37" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Texto do Logótipo -->
+    <text x="58" y="34" font-family="'Roboto', sans-serif" font-weight="700" font-size="20" fill="#ffffff">Evolução</text>
+    <text x="58" y="47" font-family="'Roboto', sans-serif" font-weight="400" font-size="10" fill="#27ae60" letter-spacing="2">BIOLOGIA</text>
+</svg>

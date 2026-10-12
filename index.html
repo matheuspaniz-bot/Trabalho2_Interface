@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução na Biologia</title>
+    
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU -->
+    <header class="header-fixo">
+        <div class="header-container">
+             <!-- Logótipo (substitua a imagem em img/logo.jpg) -->
+            <a href="#" class="logo-link">
+                <img src="img/logo.svg" alt="Logótipo Evolução Biológica" class="logo-img">
+            </a>
+
+            <!-- Checkbox invisível para controlar o menu no telemóvel -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Ícone do Menu Sanduíche (as 3 linhas) -->
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </label>
+
+        <!-- Menu de Navegação -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#futuro1">Item 3 (Em breve)</a></li>
+                <li><a href="#futuro2">Item 4 (Em breve)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- PRIMEIRA SESSÃO -->
+        <section id="introducao" class="secao-educativa">
+    <article class="artigo-conteudo">
+        <h1>A Teoria da Evolução das Espécies</h1>
+        
+        <p class="introducao-texto">
+            A evolução biológica é o processo pelo qual as populações de organismos se modificam ao longo das gerações. Esse conceito é o pilar fundamental da biologia moderna, explicando como a incrível diversidade de vida na Terra se desenvolveu a partir de um ancestral comum.
+        </p>
+
+        <h2>1. Charles Darwin e o Marco da Biologia</h2>
+        <p>
+            Em 1859, o naturalista britânico <strong>Charles Darwin</strong> publicou sua obra-prima, <em>"A Origem das Espécies"</em>. Durante sua famosa viagem a bordo do navio <em>HMS Beagle</em>, Darwin observou a variação entre espécies em diferentes regiões, especialmente nas Ilhas Galápagos.
+        </p>
+
+        <!-- PRIMEIRA IMAGEM COM A TAG SEMÂNTICA FIGURE -->
+        <figure class="figura-destaque">
+            <img src="img/darwin.jpg" alt="Retrato de Charles Darwin em idade avançada" class="img-responsiva">
+            <figcaption>Figura 1: Charles Darwin (1809–1882), autor da Teoria da Seleção Natural.</figcaption>
+        </figure>
+
+        <h2>2. O Mecanismo da Seleção Natural</h2>
+        <p>
+            A seleção natural é o principal mecanismo impulsionador da evolução. Ela ocorre em quatro passos fundamentais:
+        </p>
+        
+        <h3>A. Variabilidade Individual</h3>
+        <p>
+            Os indivíduos de uma mesma espécie apresentam pequenas variações em suas características físicas e genéticas.
+        </p>
+
+        <h3>B. Hereditariedade</h3>
+        <p>
+            Grande parte dessas variações é transmitida de pais para filhos por meio do código genético.
+        </p>
+
+        <h3>C. Sobrevivência do Mais Apto</h3>
+        <p>
+            Como os recursos no ambiente (alimento, espaço) são limitados, os indivíduos com variações favoráveis possuem maior chance de sobreviver e se reproduzir.
+        </p>
+
+        <!-- SEGUNDA IMAGEM -->
+        <figure class="figura-destaque">
+            <img src="img/tentilhoes.jpg" alt="Esquema ilustrativo da seleção natural em joaninhas ou tentilhões" class="img-responsiva">
+            <figcaption>Figura 2: Ilustração do processo de variação e seleção adaptativa ao longo do tempo.</figcaption>
+        </figure>
+
+        <h2>3. Evidências da Evolução</h2>
+        <p>
+            A teoria não é uma mera suposição; ela é apoiada por uma vasta quantidade de evidências científicas, incluindo registros fósseis que mostram formas intermediárias de vida, semelhanças anatômicas (estruturas homólogas) e comparações do código genético (DNA) entre diferentes organismos.
+        </p>
+    </article>
+</section>
+
+       <!-- SEGUNDA SESSÃO: GALERIA EM FLEXBOX E REFERÊNCIAS -->
+        <section id="galeria" class="secao-galeria">
+            <h2>Galeria de Evidências Evolutivas</h2>
+            <p class="subtitulo-galeria">Exemplos práticos de homologia, fósseis e adaptações encontradas na natureza.</p>
+
+            <!-- GALERIA ORGANIZADA COM FLEXBOX (MÍNIMO 4 FOTOS) -->
+            <div class="galeria-flex">
+                <div class="galeria-item">
+                    <img src="img/galeria-1.jpg" alt="Fóssil de Archaeopteryx em rocha" class="img-galeria">
+                    <p class="legenda-foto">Fóssil de Archaeopteryx</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="img/galeria-2.jpg" alt="Tentilhões de Galápagos com bicos variados" class="img-galeria">
+                    <p class="legenda-foto">Tentilhões de Galápagos</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="img/galeria-3.jpg" alt="Anatomia comparada de membros de vertebrados" class="img-galeria">
+                    <p class="legenda-foto">Estruturas Homólogas</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="img/galeria-4.jpg" alt="Mariposa em tronco de árvore usando camuflagem" class="img-galeria">
+                    <p class="legenda-foto">Camuflagem e Adaptação</p>
+                </div>
+            </div>
+
+            <!-- REFERÊNCIAS BIBLIOGRÁFICAS -->
+            <div class="referencias">
+                <h3>Referências Consultadas</h3>
+                <ul>
+                    <li>DAWKINS, Richard. <em>O Maior Espetáculo da Terra: As evidências da evolução</em>. São Paulo: Companhia das Letras, 2009.</li>
+                    <li>MUSEU NACIONAL. <em>Guia de Evolução e Paleontologia</em>. Disponível em: &lt;https://www.museunacional.ufrj.br&gt;. Acesso em: 2026.</li>
+                    <li>WIKIMEDIA COMMONS. <em>Imagens de domínio público sobre biologia evolutiva</em>. Disponível em: &lt;https://commons.wikimedia.org&gt;. Acesso em: 2026.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-conteudo">
+            <p><strong>Desenvolvido por:</strong> [Seu Nome Completo]</p>
+            <p>Disciplina: Design de Interfaces | Trabalho 2 - CSS e Responsividade</p>
+            <p>&copy; 2026 - Conteúdo Estritamente Educacional</p>
+        </div>
+    </footer>
+
+</body>
+</html>
