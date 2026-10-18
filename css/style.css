@@ -2,12 +2,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     
-    /* A estrutura geral de 1 coluna  */
+    /* Estrutura geral de 1 coluna exigida no projeto */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,9 +16,25 @@ body {
 main {
     flex: 1; /* Faz o conteúdo principal crescer e empurrar o rodapé para baixo */
     width: 100%;
-    max-width: 1200px; /* Limita a largura para telas muito grandes */
+    max-width: 1200px; /* Limita a largura para telas grandes */
     margin: 0 auto; /* Centraliza o conteúdo na tela */
     padding: 20px;
+}
+
+/* ==========================================
+   UTILITÁRIO DE ACESSIBILIDADE
+   ========================================== */
+/* Esconde elementos visualmente sem removê-los dos leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* ==========================================
@@ -117,7 +133,7 @@ main {
     background-color: #34495e;
 }
 
-/* MAGIA DO CSS: Quando o checkbox estiver marcado, mostra o menu */
+/* Quando o checkbox estiver marcado, exibe o menu */
 .menu-toggle:checked ~ .nav-menu {
     display: block;
 }
@@ -157,7 +173,7 @@ main {
 }
 
 /* ==========================================
-   ESTILOS DA PRIMEIRA SESSÃO (CONTEÚDO)
+   ESTILOS DA PRIMEIRA SEÇÃO (CONTEÚDO)
    ========================================== */
 
 .secao-educativa {
@@ -168,12 +184,12 @@ main {
     margin-bottom: 40px;
 }
 
-/* Título principal H1 da página */
+/* Título principal H1 da página com borda em tom verde acessível */
 .secao-educativa .titulo-principal {
     color: #2c3e50;
     font-size: 2.2rem;
     margin-bottom: 20px;
-    border-bottom: 3px solid #27ae60;
+    border-bottom: 3px solid #196f3d;
     padding-bottom: 10px;
 }
 
@@ -185,19 +201,20 @@ main {
     margin-bottom: 15px;
 }
 
-/* Subtítulos H3 (as letras A, B, C) */
+/* Subtítulos H3 com verde escuro de alto contraste (WCAG AA: rácio superior a 4.5:1) */
 .artigo-conteudo h3 {
-    color: #27ae60;
+    color: #196f3d;
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 8px;
 }
 
+/* Alinhamento à esquerda para evitar alertas de legibilidade/dislexia no WAVE */
 .artigo-conteudo p {
     font-size: 1.05rem;
-    color: #444;
+    color: #333333;
     margin-bottom: 18px;
-    text-align: justify;
+    text-align: left;
 }
 
 .introducao-texto {
@@ -209,7 +226,7 @@ main {
 /* ==========================================
    COMPORTAMENTO DE IMAGENS
    ========================================== */
-/* O max-width: 100% impede que a imagem vaze o container pai em telas de celulares */
+/* O max-width: 100% impede que a imagem vaze do container pai em celulares */
 .figura-destaque {
     margin: 30px 0;
     text-align: center;
@@ -224,7 +241,7 @@ main {
 
 figcaption {
     font-size: 0.9rem;
-    color: #666;
+    color: #555555;
     font-style: italic;
     margin-top: 8px;
 }
@@ -249,12 +266,12 @@ figcaption {
 
 .subtitulo-galeria {
     text-align: center;
-    color: #666;
+    color: #555555;
     margin-bottom: 30px;
 }
 
 /* O flex-wrap: wrap permite a quebra de linha. 
-   O calc(25% - 20px) força exatamente 4 colunas no desktop, descontando o espaço da margem/gap */
+   O calc(25% - 20px) força exatamente 4 colunas no desktop, descontando o espaço do gap */
 .galeria-flex {
     display: flex;
     flex-wrap: wrap; /* Permite que os itens pulem para a próxima linha se não couberem */
@@ -309,7 +326,7 @@ figcaption {
 
 .referencias ul {
     padding-left: 20px;
-    color: #555;
+    color: #555555;
     font-size: 0.9rem;
 }
 
