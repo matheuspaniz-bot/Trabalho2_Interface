@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolução na Biologia</title>
     
-    <!-- Pré-conexão e carregamento direto das fontes do Google (melhora a nota do PageSpeed) -->
+    <!-- Pré-conexão e carregamento direto das fontes do Google (melhora o desempenho) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -26,20 +26,21 @@
             <!-- Checkbox invisível para controlar o menu no celular (com aria-label para acessibilidade) -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
 
-            <!-- Ícone do Menu Sanduíche (as 3 linhas) -->
+            <!-- Ícone do Menu Sanduíche com texto invisível para leitores de tela (.sr-only) -->
             <label for="menu-toggle" class="menu-icon">
+                <span class="sr-only">Abrir menu de navegação</span>
                 <span class="linha"></span>
                 <span class="linha"></span>
                 <span class="linha"></span>
             </label>
 
-            <!-- Menu de Navegação -->
+            <!-- Menu de Navegação com links para âncoras válidas na página -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#introducao">Introdução</a></li>
                     <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#futuro1">Item 3 (Em breve)</a></li>
-                    <li><a href="#futuro2">Item 4 (Em breve)</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                    <li><a href="#rodape">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,10 +48,10 @@
 
     <!-- CONTEÚDO PRINCIPAL: Uso de tags semânticas (main, section, article) para melhorar acessibilidade e SEO -->
     <main>
-        <!-- PRIMEIRA SESSÃO -->
+        <!-- PRIMEIRA SEÇÃO -->
         <section id="introducao" class="secao-educativa">
             
-            <!-- O H1 visível logo na abertura da section resolve os avisos do W3C -->
+            <!-- Título principal H1 visível na abertura da seção para atender aos critérios W3C e acessibilidade -->
             <h1 class="titulo-principal">A Teoria da Evolução das Espécies</h1>
 
             <article class="artigo-conteudo">
@@ -63,7 +64,7 @@
                     Em 1859, o naturalista britânico <strong>Charles Darwin</strong> publicou sua obra-prima, <em>"A Origem das Espécies"</em>. Durante sua famosa viagem a bordo do navio <em>HMS Beagle</em>, Darwin observou a variação entre espécies em diferentes regiões, especialmente nas Ilhas Galápagos.
                 </p>
 
-                <!-- IMAGEM COM PRIORIDADE MÁXIMA DE CARREGAMENTO (LCP) -->
+                <!-- IMAGEM COM PRIORIDADE MÁXIMA DE CARREGAMENTO (LCP) E ESTRUTURA SEMÂNTICA FIGURE -->
                 <figure class="figura-destaque">
                     <img src="img/darwin.jpg" alt="Retrato de Charles Darwin em idade avançada" class="img-responsiva" fetchpriority="high">
                     <figcaption>Figura 1: Charles Darwin (1809–1882), autor da Teoria da Seleção Natural.</figcaption>
@@ -102,12 +103,12 @@
             </article>
         </section>
 
-        <!-- SEGUNDA SESSÃO: GALERIA EM FLEXBOX E REFERÊNCIAS -->
+        <!-- SEGUNDA SEÇÃO: GALERIA EM FLEXBOX E REFERÊNCIAS -->
         <section id="galeria" class="secao-galeria">
             <h2>Galeria de Evidências Evolutivas</h2>
             <p class="subtitulo-galeria">Exemplos práticos de homologia, fósseis e adaptações encontradas na natureza.</p>
 
-            <!-- GALERIA: Container principal que receberá o display: flex no CSS para alinhar os itens -->
+            <!-- GALERIA: Container principal que recebe o display: flex no CSS -->
             <div class="galeria-flex">
                 <div class="galeria-item">
                     <img src="img/galeria-1.jpg" alt="Fóssil de Archaeopteryx em rocha" class="img-galeria" loading="lazy">
@@ -130,8 +131,8 @@
                 </div>
             </div>
 
-            <!-- REFERÊNCIAS BIBLIOGRÁFICAS -->
-            <div class="referencias">
+            <!-- REFERÊNCIAS BIBLIOGRÁFICAS (Com ID para corresponder ao link do menu) -->
+            <div id="referencias" class="referencias">
                 <h3>Referências Consultadas</h3>
                 <ul>
                     <li>DAWKINS, Richard. <em>O Maior Espetáculo da Terra: As evidências da evolução</em>. São Paulo: Companhia das Letras, 2009.</li>
@@ -142,8 +143,8 @@
         </section>
     </main>
 
-    <!-- RODAPÉ -->
-    <footer>
+    <!-- RODAPÉ (Com ID para corresponder ao link do menu) -->
+    <footer id="rodape">
         <div class="footer-conteudo">
             <p><strong>Desenvolvido por:</strong> Matheus Paniz </p>
             <p>Disciplina: Design de Interfaces | Trabalho 2 - CSS e Responsividade</p>
