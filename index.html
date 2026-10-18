@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolução na Biologia</title>
     
+    <!-- Pré-conexão e carregamento direto das fontes do Google (melhora a nota do PageSpeed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,7 +50,7 @@
         <!-- PRIMEIRA SESSÃO -->
         <section id="introducao" class="secao-educativa">
             
-            <!-- O H1 visível logo na abertura da section resolve os avisos do W3C de uma vez -->
+            <!-- O H1 visível logo na abertura da section resolve os avisos do W3C -->
             <h1 class="titulo-principal">A Teoria da Evolução das Espécies</h1>
 
             <article class="artigo-conteudo">
@@ -58,9 +63,9 @@
                     Em 1859, o naturalista britânico <strong>Charles Darwin</strong> publicou sua obra-prima, <em>"A Origem das Espécies"</em>. Durante sua famosa viagem a bordo do navio <em>HMS Beagle</em>, Darwin observou a variação entre espécies em diferentes regiões, especialmente nas Ilhas Galápagos.
                 </p>
 
-                <!-- IMAGEM ESTRUTURADA: Uso de figure e figcaption para atrelar a legenda à imagem semanticamente -->
+                <!-- IMAGEM COM PRIORIDADE MÁXIMA DE CARREGAMENTO (LCP) -->
                 <figure class="figura-destaque">
-                    <img src="img/darwin.jpg" alt="Retrato de Charles Darwin em idade avançada" class="img-responsiva">
+                    <img src="img/darwin.jpg" alt="Retrato de Charles Darwin em idade avançada" class="img-responsiva" fetchpriority="high">
                     <figcaption>Figura 1: Charles Darwin (1809–1882), autor da Teoria da Seleção Natural.</figcaption>
                 </figure>
 
@@ -84,8 +89,9 @@
                     Como os recursos no ambiente (alimento, espaço) são limitados, os indivíduos com variações favoráveis possuem maior chance de sobreviver e se reproduzir.
                 </p>
 
+                <!-- IMAGEM COM CARREGAMENTO PREGUIÇOSO (loading="lazy") -->
                 <figure class="figura-destaque">
-                    <img src="img/tentilhoes.jpg" alt="Esquema ilustrativo da seleção natural em joaninhas ou tentilhões" class="img-responsiva">
+                    <img src="img/tentilhoes.jpg" alt="Esquema ilustrativo da seleção natural em joaninhas ou tentilhões" class="img-responsiva" loading="lazy">
                     <figcaption>Figura 2: Ilustração do processo de variação e seleção adaptativa ao longo do tempo.</figcaption>
                 </figure>
 
@@ -104,22 +110,22 @@
             <!-- GALERIA: Container principal que receberá o display: flex no CSS para alinhar os itens -->
             <div class="galeria-flex">
                 <div class="galeria-item">
-                    <img src="img/galeria-1.jpg" alt="Fóssil de Archaeopteryx em rocha" class="img-galeria">
+                    <img src="img/galeria-1.jpg" alt="Fóssil de Archaeopteryx em rocha" class="img-galeria" loading="lazy">
                     <p class="legenda-foto">Fóssil de Archaeopteryx</p>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="img/galeria-2.jpg" alt="Tentilhões de Galápagos com bicos variados" class="img-galeria">
+                    <img src="img/galeria-2.jpg" alt="Tentilhões de Galápagos com bicos variados" class="img-galeria" loading="lazy">
                     <p class="legenda-foto">Tentilhões de Galápagos</p>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="img/galeria-3.jpg" alt="Anatomia comparada de membros de vertebrados" class="img-galeria">
+                    <img src="img/galeria-3.jpg" alt="Anatomia comparada de membros de vertebrados" class="img-galeria" loading="lazy">
                     <p class="legenda-foto">Estruturas Homólogas</p>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="img/galeria-4.jpg" alt="Mariposa em tronco de árvore usando camuflagem" class="img-galeria">
+                    <img src="img/galeria-4.jpg" alt="Mariposa em tronco de árvore usando camuflagem" class="img-galeria" loading="lazy">
                     <p class="legenda-foto">Camuflagem e Adaptação</p>
                 </div>
             </div>
@@ -139,7 +145,7 @@
     <!-- RODAPÉ -->
     <footer>
         <div class="footer-conteudo">
-            <p><strong>Desenvolvido por:</strong> [Seu Nome Completo]</p>
+            <p><strong>Desenvolvido por:</strong> Matheus Paniz </p>
             <p>Disciplina: Design de Interfaces | Trabalho 2 - CSS e Responsividade</p>
             <p>&copy; 2026 - Conteúdo Estritamente Educacional</p>
         </div>
